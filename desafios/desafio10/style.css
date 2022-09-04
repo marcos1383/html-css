@@ -1,0 +1,59 @@
+
+body{
+    margin: 0px;
+    background-color: #84E1AD;
+}
+
+header{
+    background-image: linear-gradient(to top, #285A36, #67D480);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav{
+    text-align: start;
+}
+
+nav > a{
+    padding-left: 0px 15px 10px 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+main{
+    width: 900px;
+    margin: auto;
+}
+
+h1, h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2B613E;
+}
+
+article > h2{
+    background-image: linear-gradient(to right, #bbe3cca2,white);
+}
+
+article{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: justify;
+}
+
+.saberMais{
+    margin: 15px 5px;
+    background-color: #C5EBD6;
+    height: 500px;
+    width: 780px;
+    border-radius: 15px 15px;
+}
+
+footer{
+    background-color: #295C38;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > img{
+            display: none;
+        }
+
+        div:hover > img{
+            display: block;
+        }
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Hover</h1>
+    <p>Passe o mouse sombre o texto abaixo</p>
+    <div>
+        PASSE O MOUSE AQUI
+        <img src="./imagens/logoCSS3.jfif" alt="logo do CSS3">
+    </div>
+</body>
+</html>
