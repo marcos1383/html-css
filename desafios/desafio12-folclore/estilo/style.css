@@ -7,16 +7,8 @@
 
 body {
     background-color: grey;
-    
-}
-
-section{
-    padding: 20px;
-    background-color: white;
-    background-size: 100vh;
-    margin-left: 120px;
-    margin-right: 120px;
-    border-radius: 0px 0px 10px 10px;
+    height: 98vh;
+    width: 98vw;
 }
 
 header {
@@ -24,6 +16,11 @@ header {
     color: white;
     text-align: center;
     padding: 30px;
+    min-width: 720px;
+}
+
+header:hover {
+    color: red;
 }
 
 a {
@@ -39,9 +36,51 @@ a:hover {
     font-size: 22px;
     text-align: center;
     padding: 15px;
+    margin-top: 30px;
     margin-bottom: 30px;
+    font-weight: bolder;
+
 }
 
+section{
+    padding: 20px;
+    background-color: white;
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 10px;
+    min-width: 610px;
+    box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.438);
+}
+
+article {
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+    min-width: 500px;
+}
+
+article.contos01 {
+    background-color: blanchedalmond;
+    height: 600px;
+}
+
+article.contos02 {
+    background-color: darkgrey;
+    height: 600px;
+}
+
+article > h2 {
+    padding: 15px;
+}
+
+article > img {
+
+}
+
+article > img:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+}
 
 footer {
     background-color: black;
