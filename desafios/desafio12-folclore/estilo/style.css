@@ -8,7 +8,7 @@
 body {
     background-color: grey;
     height: 98vh;
-    width: 98vw;
+    margin: auto;
 }
 
 header {
@@ -16,7 +16,6 @@ header {
     color: white;
     text-align: center;
     padding: 30px;
-    min-width: 720px;
 }
 
 header:hover {
@@ -39,7 +38,6 @@ a:hover {
     margin-top: 30px;
     margin-bottom: 30px;
     font-weight: bolder;
-
 }
 
 section{
@@ -48,20 +46,21 @@ section{
     margin-left: 120px;
     margin-right: 120px;
     border-radius: 10px;
-    min-width: 610px;
     box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.438);
 }
 
 article {
-    height: 100vh;
     padding: 50px;
-    text-align: center;
-    min-width: 500px;
+    text-align: center ;
+    margin-bottom: 10px;
 }
 
 article.contos01 {
     background-color: blanchedalmond;
     height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
 }
 
 article.contos02 {
@@ -74,12 +73,16 @@ article > h2 {
 }
 
 article > img {
-
+    margin-bottom: 30px;
 }
 
 article > img:hover {
     border: 2px solid black;
     border-radius: 5px;
+}
+
+article > p {
+    text-align: justify;
 }
 
 footer {
