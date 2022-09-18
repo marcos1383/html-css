@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .tabela1, .tabela2 {
+            width: 500px;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
+
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table class="tabela1">
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.016.906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10.444.526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.693.929</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">8.796.448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.452.381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">7.581.051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6.248.436</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6.003.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.574.789</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3.483.985</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3.514.952</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>não calculado</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <table class="tabela2">
+        <thead>
+            <th>Frutas</th>
+            <th>Bebidas</th>
+        </thead>
+        <tbody>
+            <td>Abacaxi</td>
+            <td class="num">Suco</td>
+        </tbody>
+        <tbody>
+            <td>Abobrinha</td>
+            <td class="num">Água</td>
+        </tbody>
+        <tbody>
+            <td>Alface</td>
+            <td class="num">Refrigerante</td>
+        </tbody>
+        <tbody>
+            <td>Batata</td>
+            <td class="num">Água com gás</td>
+        </tbody>
+        <tbody>
+            <td>Brócolis</td>
+            <td class="num">Gin</td>
+        </tbody>
+        <tfoot>
+            <th>Finalizado</th>
+            <td class="num">OK</td>
+        </tfoot>
+    </table>
+</body>
+</html>
