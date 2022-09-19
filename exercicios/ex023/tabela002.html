@@ -10,10 +10,18 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .tabela1, .tabela2 {
-            width: 500px;
+        caption {
+            background-color: lightgrey;
+            padding: 10px;
+            font-weight: bolder;
+            font-size: 1.2em;
+        }
+
+        .tabela{
+            width: 400px;
             border-collapse: collapse;
             margin-bottom: 30px;
+            margin: auto;
         }
 
         td, th {
@@ -26,7 +34,17 @@
             color: white;
         }
 
-        .num {
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(73, 73, 73);
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgrey;
+        }
+
+        td.num {
             text-align: right;
         }
     </style>
@@ -37,7 +55,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
-        
+        CAPTION = legenda da tabela
         TABLE
             THEAD
                 TR, TD, TH
@@ -47,11 +65,12 @@
                 TR, TD, TH
     -->
 
-    <table class="tabela1">
+    <table class="tabela">
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -111,44 +130,34 @@
                 <td>Espírito Santo</td>
                 <td class="num">3.514.952</td>
             </tr>
-        </tbody>
-        <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>não calculado</strong></td>
+                <td>Abacaxi</td>
+                <td class="num">Suco</td>
             </tr>
-        </tfoot>
+            <tr>
+                <td>Abobrinha</td>
+                <td class="num">Água</td>
+            </tr>
+            <tr>
+                <td>Alface</td>
+                <td class="num">Refrigerante</td>
+            </tr>
+            <tr>
+                <td>Batata</td>
+                <td class="num">Água com gás</td>
+            </tr>
+            <tr>
+                <td>Brócolis</td>
+                <td class="num">Gin</td>
+            </tr>
+        </tbody>
+            <tfoot>
+                <th>Finalizado</th>
+                <td class="num">OK</td>
+            </tfoot>
     </table>
-    
-    <table class="tabela2">
-        <thead>
-            <th>Frutas</th>
-            <th>Bebidas</th>
-        </thead>
-        <tbody>
-            <td>Abacaxi</td>
-            <td class="num">Suco</td>
-        </tbody>
-        <tbody>
-            <td>Abobrinha</td>
-            <td class="num">Água</td>
-        </tbody>
-        <tbody>
-            <td>Alface</td>
-            <td class="num">Refrigerante</td>
-        </tbody>
-        <tbody>
-            <td>Batata</td>
-            <td class="num">Água com gás</td>
-        </tbody>
-        <tbody>
-            <td>Brócolis</td>
-            <td class="num">Gin</td>
-        </tbody>
-        <tfoot>
-            <th>Finalizado</th>
-            <td class="num">OK</td>
-        </tfoot>
-    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et quisquam in illo ratione numquam consectetur placeat eligendi fugit porro, doloribus aut enim debitis similique eius! Assumenda similique animi doloribus.lore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis itaque atque nemo facere deleniti, expedita repudiandae, laboriosam, aliquid sed eligendi officiis exercitationem? Impedit, expedita sit eos obcaecati ratione accusamus distinctio? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis expedita temporibus sit tempora in dolore cumque recusandae nesciunt, inventore, quod cupiditate officia et nulla rerum magni, dolorem at consequatur ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, corrupti! Laudantium eos excepturi, ad quisquam totam sunt in repellat dolorem at aut sint illo sapiente aspernatur perferendis hic? Dolor, excepturi.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et quisquam in illo ratione numquam consectetur placeat eligendi fugit porro, doloribus aut enim debitis similique eius! Assumenda similique animi doloribus.lore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis itaque atque nemo facere deleniti, expedita repudiandae, laboriosam, aliquid sed eligendi officiis exercitationem? Impedit, expedita sit eos obcaecati ratione accusamus distinctio? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis expedita temporibus sit tempora in dolore cumque recusandae nesciunt, inventore, quod cupiditate officia et nulla rerum magni, dolorem at consequatur ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, corrupti! Laudantium eos excepturi, ad quisquam totam sunt in repellat dolorem at aut sint illo sapiente aspernatur perferendis hic? Dolor, excepturi.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et quisquam in illo ratione numquam consectetur placeat eligendi fugit porro, doloribus aut enim debitis similique eius! Assumenda similique animi doloribus.lore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis itaque atque nemo facere deleniti, expedita repudiandae, laboriosam, aliquid sed eligendi officiis exercitationem? Impedit, expedita sit eos obcaecati ratione accusamus distinctio? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis expedita temporibus sit tempora in dolore cumque recusandae nesciunt, inventore, quod cupiditate officia et nulla rerum magni, dolorem at consequatur ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, corrupti! Laudantium eos excepturi, ad quisquam totam sunt in repellat dolorem at aut sint illo sapiente aspernatur perferendis hic? Dolor, excepturi.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellendus quibusdam mollitia enim sunt dolorem. Omnis, animi quae! Reiciendis repellendus ducimus alias est. Obcaecati earum, itaque reprehenderit eos quis veritatis!</p>
 </body>
 </html>
